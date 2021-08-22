@@ -1,0 +1,19 @@
+@use 'base';
+
+.Header {
+  padding: 2vh 10vw;
+  background-color: base.$primary-color;
+  color: base.$fourth-color;
+  display: flex;
+  justify-content: space-between;
+
+  .HeaderLink{
+    color: base.$fourth-color;
+    margin: 0 1vw;
+  }
+
+  div{
+    display: flex;
+    align-items: center;
+  }
+}

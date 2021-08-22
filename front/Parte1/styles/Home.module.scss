@@ -1,0 +1,152 @@
+@use 'base';
+
+.HomeButton{
+  background-color: base.$secondary-color;
+  padding: 2vh 2vw;
+  color: base.$fourth-color;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+
+  &:hover{
+    background-color: #eca526;
+  }
+}
+
+.BackButton{
+  color: base.$tertiary-color;
+  cursor: pointer;
+  margin-bottom: 5vh;
+}
+
+// Section One
+.SectionOneImage, .SectionOneText{
+  width: 100%;
+
+  .Price{
+    color: black;
+    font-weight: 400;
+  }
+
+  .ProductAmount{
+    padding: 1.5vh 1.5vw;
+    background-color: #f2f2f2;
+    margin-right: 1vw;
+  }
+
+  .SectionOneAddToCart{
+    display: flex;
+    
+    span{
+      margin: 0 0.5vw;
+    }  
+  }  
+
+  .AmountButton{
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.SectionOneText{
+  h5{
+    margin-bottom: -3vh;
+    color: base.$secondary-color;
+    letter-spacing: 10px;
+    font-weight: 100;
+  }
+}
+
+// Section Two
+.SectionTwoFeatures{
+  width: 60%;
+  padding-right: 10vw;
+}
+
+.SectionTwoBox{
+  width: 40%;
+
+  ul{
+    color: base.$tertiary-color;
+    padding: 0;
+
+    li{
+      margin-bottom: 1vh;
+    }
+  }
+  
+  .BoxAmount{
+    color: base.$secondary-color;
+    margin-right: 2vw;
+  }
+}
+
+
+// Section Three
+.SectionThree{
+  justify-content: center;
+}
+.SectionThreeColumnOne{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  img{
+    margin-bottom: 15px !important;
+  }
+}
+
+// Section Four
+.SectionFour{
+  flex-direction: column;
+  align-items: center;
+
+  .Products, .Sections{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+  }
+
+  .SectionCardTitle{
+    position: absolute;
+    bottom: 5vh;
+  }
+
+  .SectionCardLink{
+    position: absolute;
+    bottom: 3vh;
+    color: base.$tertiary-color;
+
+    &::after{
+      content: ">";
+      margin-left: 5px;
+      color: base.$secondary-color;
+    }
+  }
+}
+
+.ProductCard, .SectionCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+// Section Five
+.SectionFive{
+  justify-content: space-around;
+  align-items: center;
+  
+  & div:first-child{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span{
+      color: base.$secondary-color;
+    }
+  }
+  
+}

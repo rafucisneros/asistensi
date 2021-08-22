@@ -1,0 +1,58 @@
+@use 'base';
+
+.Footer{
+  background-color: base.$primary-color;
+  color: base.$fourth-color;
+
+  .MainSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 10%;
+  }
+
+  .SectionOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 50%;
+
+    h2{
+      margin-top: 0;
+    }
+
+    p{
+      color: #bab7b7;
+      margin: 0;
+    }
+  }
+
+  .SectionTwo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+
+    nav{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .FooterLink{
+    color: base.$fourth-color;
+    margin: 0 1vw;
+  }
+  
+  .FooterLinkNetworks{
+    color: base.$fourth-color;
+    margin: 0 0.2vw;
+  }
+
+  .Copyright{
+    padding: 1% 0% 1% 10%;
+    p{
+      color: #bab7b7;
+    }
+  }
+}
